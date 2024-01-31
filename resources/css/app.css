@@ -1,0 +1,64 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+nav {
+    background-color: #c00;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centrer les éléments */
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li.right {
+    margin-left: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s, transform 0.3s, box-shadow 0.3s; /* Ajout des transitions pour les effets au survol */
+}
+
+nav a:hover {
+    color: #fff;
+    transform: scale(1.1); /* Léger changement de taille au survol */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ajout d'une ombre au survol */
+}
+
+header {
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0; /* Augmentation de la taille du footer */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Ajout d'une ombre sous le footer */
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
